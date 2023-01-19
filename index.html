@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cadastro Jump</title>
+  </head>
+  <body>
+    <header>
+      <img src="./images/logodnc.svg" alt="logomarca DNC" />
+    </header>
+    <section>
+      <img src="./images/logojumpy.svg" alt="" />
+      <h3>Bem Vindo ao Jumpy!</h3>
+      <form action="">
+        <div class="content-input">
+          <label for="name">Nome Completo:</label>
+          <input type="text" id="name" autocomplete="off" placeholder="Nome Completo"/>
+          <span id="msg-name">*Campo Obrigatório*</span>
+        </div>
+
+        <div class="content-input">
+          <label for="email">Email:</label>
+          <input type="email" id="email" autocomplete="off" placeholder="Email"/>
+          <span id="msg-email">*Campo Obrigatório*</span>
+        </div >
+
+        <div class="content-input">
+          <label for="tel">Telefone:</label>
+          <input type="number" id="tel" autocomplete="off" placeholder="(99)99999-9999"/>
+          <span id="msg-tel">*Campo Obrigatório*</span>
+        </div>
+
+        <div class="content-input">
+          <label for="cpf">CPF:</label>
+          <input type="number" id="cpf" autocomplete="off" placeholder="123.456.789-00"/>
+          <span id="msg-cpf">*Campo Obrigatório*</span>
+        </div>
+
+        <div class="content-input">
+          <label for="pass">Senha:</label>
+          <input type="password" id="pass" autocomplete="off" placeholder="Senha"/>
+          <span id="msg-pass">*Campo Obrigatório*</span>
+        </div>
+        
+      </form>
+      <div class="content-input submit">
+        <button id="cadastrar" onclick="Cadastrar()">Cadastrar</button>
+        <span id="msg-geral"></span>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
